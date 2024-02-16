@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Dashboard Page</title>
+    </head>
+    <body style="background-color: aliceblue;">
+        <nav style="color: blue;background-color: aqua;" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a  class="navbar-brand" href="">Full Stack Demo</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/dashboard">Home</a></li>
+                    <li class="active"><a href="/insertnotes">Insert notes</a></li>
+                    <li><a href="/viewnotes">view notes</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="col-sm-2"></div>
+
+        <div class="container col-sm-6">
+            <form action="/insertnotesdata" method="post">
+                <div class="form-group">
+                    <label>Enter the notes</label><br/>
+                    <textarea rows="10" cols="100" name="notes"></textarea>
+                </div>
+                <button type="submit"class="btn btn-warning">Insert notes</button>
+            </form>
+            <span style="color: blue">{{res2}}</span>
+            
+        </div>
+    </body>
+</html>

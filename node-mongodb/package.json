@@ -1,0 +1,18 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "doing crud operations on mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devdependencies":{
+    "mongodb":"5.5.0"
+  }
+  "keywords": [
+    "mongodb",
+    "node"
+  ],
+  "author": "Ammu",
+  "license": "ISC"
+}
